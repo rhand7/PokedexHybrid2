@@ -11,6 +11,8 @@
 		2ACF402B1EC4C57F0043F956 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACF40291EC4C57F0043F956 /* Main.storyboard */; };
 		2ACF402D1EC4C57F0043F956 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ACF402C1EC4C57F0043F956 /* Assets.xcassets */; };
 		2ACF40301EC4C57F0043F956 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACF402E1EC4C57F0043F956 /* LaunchScreen.storyboard */; };
+		2ACF403D1EC4C7990043F956 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACF403C1EC4C7990043F956 /* NetworkController.swift */; };
+		2ACF40411EC4C7EF0043F956 /* DMNPokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACF40401EC4C7EF0043F956 /* DMNPokemon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,10 @@
 		2ACF402C1EC4C57F0043F956 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ACF402F1EC4C57F0043F956 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2ACF40311EC4C57F0043F956 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ACF403C1EC4C7990043F956 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		2ACF403E1EC4C7EF0043F956 /* PokedexHybrid2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PokedexHybrid2-Bridging-Header.h"; sourceTree = "<group>"; };
+		2ACF403F1EC4C7EF0043F956 /* DMNPokemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMNPokemon.h; sourceTree = "<group>"; };
+		2ACF40401EC4C7EF0043F956 /* DMNPokemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMNPokemon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			children = (
 				2ACF40251EC4C57F0043F956 /* AppDelegate.swift */,
 				2ACF40291EC4C57F0043F956 /* Main.storyboard */,
+				2ACF403B1EC4C7820043F956 /* Networking */,
 				2ACF403A1EC4C5BC0043F956 /* Models */,
 				2ACF40391EC4C5B60043F956 /* ModelControllers */,
 				2ACF40381EC4C5AD0043F956 /* ViewControllers */,
@@ -65,6 +72,7 @@
 		2ACF40371EC4C5A20043F956 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2ACF403E1EC4C7EF0043F956 /* PokedexHybrid2-Bridging-Header.h */,
 				2ACF402C1EC4C57F0043F956 /* Assets.xcassets */,
 				2ACF402E1EC4C57F0043F956 /* LaunchScreen.storyboard */,
 				2ACF40311EC4C57F0043F956 /* Info.plist */,
@@ -89,8 +97,18 @@
 		2ACF403A1EC4C5BC0043F956 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2ACF403F1EC4C7EF0043F956 /* DMNPokemon.h */,
+				2ACF40401EC4C7EF0043F956 /* DMNPokemon.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		2ACF403B1EC4C7820043F956 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2ACF403C1EC4C7990043F956 /* NetworkController.swift */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +144,7 @@
 					2ACF40211EC4C57F0043F956 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = WC4MWVKQFQ;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -166,7 +185,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ACF403D1EC4C7990043F956 /* NetworkController.swift in Sources */,
 				2ACF40261EC4C57F0043F956 /* AppDelegate.swift in Sources */,
+				2ACF40411EC4C7EF0043F956 /* DMNPokemon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,11 +310,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = WC4MWVKQFQ;
 				INFOPLIST_FILE = PokedexHybrid2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rob-hand.PokedexHybrid2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PokedexHybrid2/PokedexHybrid2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -302,11 +326,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = WC4MWVKQFQ;
 				INFOPLIST_FILE = PokedexHybrid2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rob-hand.PokedexHybrid2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PokedexHybrid2/PokedexHybrid2-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
