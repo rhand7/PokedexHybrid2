@@ -13,6 +13,7 @@
 		2ACF40301EC4C57F0043F956 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACF402E1EC4C57F0043F956 /* LaunchScreen.storyboard */; };
 		2ACF403D1EC4C7990043F956 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACF403C1EC4C7990043F956 /* NetworkController.swift */; };
 		2ACF40411EC4C7EF0043F956 /* DMNPokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACF40401EC4C7EF0043F956 /* DMNPokemon.m */; };
+		2ACF40441EC4CF3A0043F956 /* DMNPokemonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACF40431EC4CF3A0043F956 /* DMNPokemonController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		2ACF403E1EC4C7EF0043F956 /* PokedexHybrid2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PokedexHybrid2-Bridging-Header.h"; sourceTree = "<group>"; };
 		2ACF403F1EC4C7EF0043F956 /* DMNPokemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMNPokemon.h; sourceTree = "<group>"; };
 		2ACF40401EC4C7EF0043F956 /* DMNPokemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMNPokemon.m; sourceTree = "<group>"; };
+		2ACF40421EC4CF3A0043F956 /* DMNPokemonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMNPokemonController.h; sourceTree = "<group>"; };
+		2ACF40431EC4CF3A0043F956 /* DMNPokemonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMNPokemonController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 		2ACF40391EC4C5B60043F956 /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2ACF40421EC4CF3A0043F956 /* DMNPokemonController.h */,
+				2ACF40431EC4CF3A0043F956 /* DMNPokemonController.m */,
 			);
 			name = ModelControllers;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ACF403D1EC4C7990043F956 /* NetworkController.swift in Sources */,
+				2ACF40441EC4CF3A0043F956 /* DMNPokemonController.m in Sources */,
 				2ACF40261EC4C57F0043F956 /* AppDelegate.swift in Sources */,
 				2ACF40411EC4C7EF0043F956 /* DMNPokemon.m in Sources */,
 			);
