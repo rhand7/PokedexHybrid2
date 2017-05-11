@@ -14,6 +14,7 @@
 		2ACF403D1EC4C7990043F956 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACF403C1EC4C7990043F956 /* NetworkController.swift */; };
 		2ACF40411EC4C7EF0043F956 /* DMNPokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACF40401EC4C7EF0043F956 /* DMNPokemon.m */; };
 		2ACF40441EC4CF3A0043F956 /* DMNPokemonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACF40431EC4CF3A0043F956 /* DMNPokemonController.m */; };
+		2ACF40461EC4DDEE0043F956 /* PokemonSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACF40451EC4DDEE0043F956 /* PokemonSearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		2ACF40401EC4C7EF0043F956 /* DMNPokemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMNPokemon.m; sourceTree = "<group>"; };
 		2ACF40421EC4CF3A0043F956 /* DMNPokemonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMNPokemonController.h; sourceTree = "<group>"; };
 		2ACF40431EC4CF3A0043F956 /* DMNPokemonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMNPokemonController.m; sourceTree = "<group>"; };
+		2ACF40451EC4DDEE0043F956 /* PokemonSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonSearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		2ACF40381EC4C5AD0043F956 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2ACF40451EC4DDEE0043F956 /* PokemonSearchViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ACF403D1EC4C7990043F956 /* NetworkController.swift in Sources */,
+				2ACF40461EC4DDEE0043F956 /* PokemonSearchViewController.swift in Sources */,
 				2ACF40441EC4CF3A0043F956 /* DMNPokemonController.m in Sources */,
 				2ACF40261EC4C57F0043F956 /* AppDelegate.swift in Sources */,
 				2ACF40411EC4C7EF0043F956 /* DMNPokemon.m in Sources */,

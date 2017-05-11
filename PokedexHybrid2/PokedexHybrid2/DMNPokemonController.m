@@ -21,7 +21,7 @@ static NSString * const baseURLString = @"http://pokeapi.co/api/v2/pokemon/";
     NSURL *baseURL = [NSURL URLWithString:baseURLString];
     NSURL *searchURL = [baseURL URLByAppendingPathComponent:[searchTerm lowercaseString]];
     
-    [NetworkController performRequestFor:searchTerm httpMethodString:@"GET" urlParameters:nil body:nil completion:^(NSData * data, NSError * error) {
+    [NetworkController performRequestFor:searchURL httpMethodString:@"GET" urlParameters:nil body:nil completion:^(NSData * data, NSError * error) {
         
         if (error) {
             NSLog(@"Error getting Pokemon for %@: %@", searchTerm, error);
